@@ -1,0 +1,19 @@
+name = "ai-meeting-assistant"
+compatibility_date = "2025-02-04"
+
+# Set the correct entry point for your worker
+main = "./src/index.js"
+
+# Add any KV namespaces, bindings, or environment variables if needed
+[vars]
+MY_ENV_VARIABLE = "value"
+
+[dev]
+port = 8787  # Default development port
+
+[build]
+command = "npm run build"
+watch_dir = "./src"
+
+# Uncomment the following if using modules (ES Modules)
+# type = "javascript"
